@@ -5,10 +5,16 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+__author__ = 'LenoxWong'
 
 
-class DoubookItem(scrapy.Item):
+from scrapy import Item, Field
+
+class DoubookItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    title = Field()
+    author = Field()
+    rate = Field()
+    people = Field()
+    link = Field()
