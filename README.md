@@ -9,14 +9,17 @@ Crawl books from https://book.douban.com
 - [Selenium](http://www.seleniumhq.org/)
 
 # Usage
+
 ##### in command line, at the top level of the project:
 ```scrapy crawl DB -a search=what_you_want_to_search -a rate=what_rate_of_book_do_you_want```
-##### such as
+
+such as
 ```scrapy crawl DB -a search=妖怪 -a rate=8.0```
 
 then a file named **妖怪(8.0+).json** will be in top level of the project
 
-or you can just check and change the **configs.py**
+##### or you can just check and change the **configs.py** and then
+```scrapy crawl DB```
 
 # License
 This repository uses the [MIT License](/LICENSE).
