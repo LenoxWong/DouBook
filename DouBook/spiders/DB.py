@@ -16,7 +16,7 @@ class DbSpider(Spider):
     __pt_driver__ = webdriver.PhantomJS()
 
     basic_url =  'https://book.douban.com/subject_search?search_text={}&cat=1001&start={}'
-    page = 900
+    page = 0
 
     def start_requests(self):
         if getattr(self, 'search', None) is None:
